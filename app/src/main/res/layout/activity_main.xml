@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person_black_24dp"
+            android:layout_weight="0.3"
+            android:layout_marginTop="25dp"
+            android:onClick="editUserInfo"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Find Jobs"
+            android:layout_weight="0.4"
+            android:layout_marginTop="25dp"
+            android:textColor="#000"
+            android:onClick="openFilters"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_location_on_black_24dp"
+            android:textColor="#FFF"
+            android:onClick="changeLocation"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/secOne"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:background="#D300B7FF"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_alignTop="@id/secOne"
+                android:layout_alignBottom="@id/secOne"
+                android:layout_alignLeft="@id/secOne"
+                android:layout_alignRight="@id/secOne" />
+
+            <ImageView
+                android:id="@+id/secTwo"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_toRightOf="@id/secOne"
+                android:layout_marginTop="20dp"
+                android:background="#E608D1D6"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_alignTop="@id/secTwo"
+                android:layout_alignBottom="@id/secTwo"
+                android:layout_alignLeft="@id/secTwo"
+                android:layout_alignRight="@id/secTwo" />
+
+            <ImageView
+                android:id="@+id/secThree"
+                android:layout_width="150dp"
+                android:layout_height="400dp"
+                android:layout_centerHorizontal="true"
+                android:background="#D38FD0E9"
+                android:layout_below="@id/secOne"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_alignTop="@id/secThree"
+                android:layout_alignBottom="@id/secThree"
+                android:layout_alignLeft="@id/secThree"
+                android:layout_alignRight="@id/secThree" />
+
+            <ImageView
+                android:id="@+id/secFour"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_toLeftOf="@id/secThree"
+                android:layout_below="@id/secOne"
+                android:background="#D30E5C79"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_alignTop="@id/secFour"
+                android:layout_alignBottom="@id/secFour"
+                android:layout_alignLeft="@id/secFour"
+                android:layout_alignRight="@id/secFour" />
+
+            <ImageView
+                android:id="@+id/secFive"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/secOne"
+                android:layout_marginTop="300dp"
+                android:layout_toLeftOf="@id/secThree"
+                android:background="#D33979BD"
+                android:padding="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_alignTop="@id/secFive"
+                android:layout_alignBottom="@id/secFive"
+                android:layout_alignLeft="@id/secFive"
+                android:layout_alignRight="@id/secFive" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
